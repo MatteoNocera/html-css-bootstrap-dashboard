@@ -5,3 +5,9 @@
 
 /* #endregion Debug */
 
+#head_site {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
