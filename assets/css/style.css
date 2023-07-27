@@ -4,22 +4,78 @@
     background-color: aqua;
 }
 
+.debug .my_up_menu, .debug .my_down_menu {
+    background-color: violet;
+    height: 100px;
+    width: 100%;
+}
+
+.debug .selection {
+    background-color: green;
+    border: 1px solid;
+    width: 100%;
+    height: 30%;
+}
+
+.debug .contents {
+    background-color: yellow;
+    height: 1200px;
+}
+
+.debug .square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
 
 /* #endregion Debug */
 
 #head_site {
-    height: 70px;
     position: sticky;
     top: 0;
     left: 0;
-
+    background-color: #f8f9fa;
+    height: 70px;
 }
 
 .sidebar {
-    height: 100;
     width: 68px;
+    height: calc(100vh - 70px);
 }
 
 .contents {
-    width: calc(100vw - 68px);
+    width: calc(100vw - 68px); 
+}
+
+.banner {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: 150px;
+    }
+    .contents {
+        width: calc(100vw - 150px);
+    }
 }
