@@ -17,11 +17,11 @@
 
   </head>
 
-  <body class="debug overflow-hidden">
+  <body class="overflow-hidden">
     
-    <header id="head_site" class="bg-body-tertiary">
+    <header id="head_site" class="">
           
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/img/mobile-logo.png" width="50" alt="" class="d-lg-none">
@@ -34,21 +34,21 @@
           </form>
 
           <div class="dropstart d-lg-none">
-            <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-bell text-warning"></i> 
             </div>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Action two</a></li>
-              <li><a class="dropdown-item" href="#">Action three</a></li>
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
           </div>
 
           
           
           
-          <div class="collapse navbar-collapse flex-grow-0 align-items-center" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
 
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
@@ -60,13 +60,13 @@
 
               <li class="nav-item dropdown">
                 <div class="dropstart d-none d-lg-inline-block">
-                  <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bell text-warning"></i> 
                   </div>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action two</a></li>
-                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
                 </div>
               </li>
@@ -82,57 +82,91 @@
 
 
 
-    <main id="main_site" class="d-flex overflow-y-auto" >
-        <div class="sidebar d-flex flex-column justify-content-between">
+    <main id="main_site" class="d-flex" >
+        <div class="wrapper d-flex">
 
-            <div class="my_up_menu p-3">
-                <div class="selection mb-2"><a href="#"><span class="icon text-white"><i class="fa fa-home" aria-hidden="true"></i></span><span class="icon_text text-white">Home</span></a></div>
+          <div class="sidebar d-flex flex-column justify-content-between align-items-center">
 
-                <div class="selection mb-2"><a href="#"><span class="icon"></span><span class="icon_text"></span></a></div>
+            <div class="my_up_menu px-3 py-4">
 
-                <div class="selection"><a href="#"><span class="icon"></span><span class="icon_text"></span></a></div>
-            </div>
+                <div class="selection mb-2">
+                  <a href="#" class="d-flex gap-3 text-decoration-none">
+                    <div class="icon text-white"><i class="fa fa-home" aria-hidden="true"></i></div>
+                    <div class="icon_text text-white d-none d-lg-inline-block">
+                    Home</div>
+                  </a>
+                </div>
 
-            <div class="my_down_menu"></div>
-        </div>
+                <div class="selection mb-2">
+                  <a href="#" class="d-flex gap-3 text-decoration-none">
+                    <div class="icon text-white"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="icon_text text-white d-none d-lg-inline-block">
+                    Stats</div>
+                  </a>
+                </div>
 
-
-
-
-        <div class="contents">
-
-            <section class="banner">
-
-                <div class="container d-flex flex-column flex-sm-row bg-primary py-4 gap-3">
-
-                    <div class="add_student order-sm-2"></div>
-                    <div class="boolean_app"></div>
-                    <div class="students"></div>
-
+                <div class="selection mb-2">
+                  <a href="#" class="d-flex gap-3 text-decoration-none">
+                    <div class="icon text-white"><i class="fa-solid fa-signal"></i></div>
+                    <div class="icon_text text-white d-none d-lg-inline-block">
+                    Signals</div>
+                  </a>
                 </div>
 
                 
-    
-            </section>
-            <!-- /. Banner -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8">
-                        <div class="card next_class"></div>
-                        <div class="faq"></div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="to_do"></div>
-                        <div class="card"></div>
-                    </div>
-                </div>
-
             </div>
 
-            
+            <div class="my_down_menu px-3 py-4">
+
+              <div class="selection mb-2">
+                <a href="#" class="d-flex gap-3 text-decoration-none">
+                  <div class="icon text-white"><i class="fa-solid fa-gear"></i></div>
+                  <div class="icon_text text-white d-none d-lg-inline-block">
+                  Admin</div>
+                </a>
+              </div>
+
+            </div>
+          </div>
 
 
+
+
+          <div class="contents  overflow-y-auto">
+
+              <section class="banner">
+
+                  <div class="container d-flex flex-column flex-sm-row bg-primary py-4 gap-3">
+
+                      <div class="add_student order-sm-2"></div>
+                      <div class="boolean_app"></div>
+                      <div class="students"></div>
+
+                  </div>
+
+                  
+      
+              </section>
+              <!-- /. Banner -->
+
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-8">
+                          <div class="card next_class"></div>
+                          <div class="faq"></div>
+                      </div>
+                      <div class="col-xl-4">
+                          <div class="to_do"></div>
+                          <div class="card"></div>
+                      </div>
+                  </div>
+
+              </div>
+
+              
+
+
+          </div>
         </div>
         
     </main>

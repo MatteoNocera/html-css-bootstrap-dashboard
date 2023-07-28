@@ -38,6 +38,15 @@
 
 
 
+#head_site {
+    
+    height: 70px;
+}
+
+.nav {
+    background-color: white;
+}
+
 .search_bar {
     font-size: 0.8rem;
     width: 50vw;
@@ -47,19 +56,30 @@
     width: 68px;
     height: calc(100vh - 70px);
     background-image: url(../img/sidebar-bg.png);
-    background-color: rgba(0, 0, 255, 0.462);
+    background-color: #051e34;
+    height: calc(100vh - 70px);
+}
 
+
+
+.wrapper {
+    
+    width: 100%;
 }
 
 .contents {
     width: 100%;
+    overflow-y: auto;
 }
 
 
 
-
-
-
+@media screen and (min-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    
+}
 
 
 
