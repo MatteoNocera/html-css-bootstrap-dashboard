@@ -137,9 +137,29 @@
 
               <div class="banner">
 
-                  <div class="d-flex flex-column flex-sm-row bg-primary py-4 gap-3 px-3">
+                  <div class="d-flex flex-column flex-sm-row bg-primary py-4 gap-5 px-3">
 
-                      <div class="add_student order-sm-2"></div>
+                      <div class="add_student order-sm-2 d-flex
+                      align-items-center gap-4">
+
+                        <h4 class="text-white">
+                          Nuovo Studente
+                        </h4>
+
+                        <div class="btn btn-primary" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus fa-lg"></i></div>
+
+                        <div class="offcanvas offcanvas-end my_w_100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            ...
+                          </div>
+                        </div>
+
+
+                      </div>
 
                       <div class="boolean_app">
 
@@ -163,7 +183,14 @@
 
                       </div>
 
-                      <div class="students"></div>
+                      <div class="students text-white">
+                        <h4>
+                          Studenti online negli ultimi 30 minuti
+                        </h4>
+                        <div class="number_students fs-2">
+                          125
+                        </div>
+                      </div>
 
                   </div>
 

@@ -90,11 +90,22 @@
     padding: 0.2rem;
 }
 
+.add_student .btn {
+    border: 1px solid white;
+}
+
+#main_site .my_w_100 {
+    width: 100%;
+}
+
 
 
 @media screen and (min-width: 768px) {
     .sidebar {
         width: 150px;
+    }
+    #main_site .my_w_100 {
+        width: 50%;
     }
     
 }
