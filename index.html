@@ -17,48 +17,46 @@
 
   </head>
 
-  <body class="">
+  <body class="debug">
     
-    <header id="head_site">
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid justify-content-between">
-              <a class="navbar-brand" href="#"><img class="img_mobile d-lg-none" src="./assets/img/mobile-logo.png" width="60" alt=""></a>
-              <a class="navbar-brand" href="#"><img class="img_desktop d-none d-lg-inline-block" src="./assets/img/logo.svg" alt=""></a>
-
-              <form class="d-flex" role="search">
-                <input class="search_bar form-control me-2" type="text" placeholder="&#xF002; Prova a cercare: lezioni di Laravel" style="font-family:Arial, FontAwesome" aria-label="Search">
-                
-              </form>
-
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+    <header id="head_site" class="bg-body-tertiary">
+          
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-                
-              </div>
-            </div>
-          </nav>
-
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
     </header>
     <!-- /#head_site -->
@@ -69,9 +67,11 @@
         <div class="sidebar d-flex flex-column justify-content-between">
 
             <div class="my_up_menu p-3">
-                <div class="selection mb-2"><a href=""><span class="icon"></span><span class="icon_text"></span></a></div>
-                <div class="selection mb-2"><a href=""><span class="icon"></span><span class="icon_text"></span></a></div>
-                <div class="selection"><a href=""><span class="icon"></span><span class="icon_text"></span></a></div>
+                <div class="selection mb-2"><a href="#"><span class="icon text-white"><i class="fa fa-home" aria-hidden="true"></i></span><span class="icon_text text-white">Home</span></a></div>
+
+                <div class="selection mb-2"><a href="#"><span class="icon"></span><span class="icon_text"></span></a></div>
+
+                <div class="selection"><a href="#"><span class="icon"></span><span class="icon_text"></span></a></div>
             </div>
 
             <div class="my_down_menu"></div>
@@ -86,9 +86,9 @@
 
                 <div class="container d-flex flex-column flex-sm-row bg-primary py-4 gap-3">
 
-                    <div class="square add_student order-sm-2"></div>
-                    <div class="square boolean_app"></div>
-                    <div class="square students"></div>
+                    <div class="add_student order-sm-2"></div>
+                    <div class="boolean_app"></div>
+                    <div class="students"></div>
 
                 </div>
 
